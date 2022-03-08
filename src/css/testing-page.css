@@ -1,0 +1,79 @@
+.testing-page {
+    height: 100vh;
+    background-image: url(../assets/img/bg_stars.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.testing-page__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+.testing-page__text {
+    margin-top: 56px;
+    font-family: "Merriweather", serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #fff;
+}
+.testing-page__description {
+    margin-top: 14px;
+    padding: 30px 15px;
+    background: rgba(243, 243, 242, 0.8);
+    border-radius: 20px;
+    z-index: 1;
+}
+.testing-page__description-text {
+    font-family: "Merriweather", serif;
+    font-size: 16px;
+    line-height: 23px;
+    font-style: normal;
+    letter-spacing: 0.05em;
+    color: #181818;
+}
+.testing-page__btn {
+    margin-top: 33px;
+    color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    background: transparent;
+    font-family: "Merriweather", serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    padding: 10px 32px;
+}
+.testing-page__copyright {
+    padding-top: 30%;
+    font-size: 10px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.5);
+}
+@media (min-width: 1160px) {
+}
+.lightning-first {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    z-index: 0;
+}
+.lightning-second {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 0;
+}
+
+@media (min-width: 400px) {
+    .testing-page__btn {
+        padding: 12px 60px;
+    }
+}

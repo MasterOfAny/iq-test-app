@@ -1,0 +1,73 @@
+.header {
+    position: sticky;
+    top: 0;
+    background: #181818;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+    height: 46px;
+}
+.humburger {
+    width: 24px;
+    cursor: pointer;
+}
+.humburger-close {
+    display: block;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    margin-left: auto;
+}
+.bar {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: #696969;
+}
+.bar + .bar {
+    margin-top: 4px;
+}
+.menu-drop {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 18px;
+    background-color: #181818;
+    z-index: 10;
+}
+.active {
+    top: 0;
+}
+.menu__list {
+    margin-top: 64px;
+}
+.menu__item {
+    width: 100%;
+}
+.menu__item + .menu__item {
+    margin-top: 27px;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    height: 46px;
+}
+.header__title {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+.header__brain {
+    height: 48px;
+    width: 48px;
+    margin-right: 9px;
+}
+.header__text {
+    font-family: "Yeseva One", cursive;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+}

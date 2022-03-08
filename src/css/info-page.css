@@ -1,0 +1,60 @@
+.info-page__content {
+    background-image: url(../assets/img/bg_quote.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 340px;
+}
+.quote-up {
+    display: block;
+    width: 23px;
+    margin-right: auto;
+}
+.quote-down {
+    display: block;
+    width: 23px;
+    margin-left: auto;
+}
+.info-page__quot {
+    padding-top: 43px;
+    padding-bottom: 33px;
+    padding-left: 9px;
+    padding-right: 9px;
+    margin: 0 auto;
+}
+.info-page__quot-gradient {
+    background: radial-gradient(
+        84.34% 50.29% at 48.75% 49.71%,
+        #2950c2 0%,
+        rgba(38, 91, 199, 0.96) 40.62%,
+        rgba(39, 98, 187, 0) 85.42%
+    );
+}
+.info-page__quot-text {
+    font-family: "Yeseva One", cursive;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    width: 240px;
+    margin: 0 auto;
+    margin-top: 18px;
+    color: #fff;
+    z-index: 3;
+}
+.info-page__description {
+    padding-top: 38px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-page__text {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #272727;
+}
+.info-page__img {
+    padding-top: 38px;
+}
