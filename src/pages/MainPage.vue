@@ -4,7 +4,7 @@
     <section class="main-page">
       <div id="main"></div>
       <div class="container">
-        <div class="main-page__content">
+        <div ref="mainPage" class="main-page__content">
           <p class="main-page__text">Пройдите точный и быстрый</p>
           <h1 class="main-page__title uppercase-text yellow-text">
             тест на определение iq
@@ -92,7 +92,7 @@
     </section>
     <section id="testing" class="testing-page">
       <div class="container">
-        <div class="testing-page__content">
+        <div ref="testPage" class="testing-page__content">
           <p class="testing-page__text">
             Прохождение теста займет у вас не более
             <span class="yellow-text">12 минут</span>, а его результаты вы
@@ -129,5 +129,20 @@
 </template>
 
 <script>
-export default {};
+import { ref, onMounted } from "vue";
+export default {
+  setup() {
+    onMounted(() => {
+      mainPage.value.style.height = window.innerHeight - 46 + "px";
+      testPage.value.style.height = window.innerHeight - 46 + "px";
+    });
+    const mainPage = ref(null);
+    const testPage = ref(null);
+
+    return {
+      mainPage,
+      testPage,
+    };
+  },
+};
 </script>
