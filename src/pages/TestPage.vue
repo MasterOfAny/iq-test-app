@@ -14,9 +14,9 @@
     </div>
   </headerUI>
   <main class="main">
-    <section ref="testBlock" class="test">
+    <section class="test">
       <div class="container">
-        <div ref="questionBlock" class="question-card" v-if="!testEnd">
+        <div class="question-card" v-if="!testEnd">
           <div class="status-container">
             <div class="status-bar">
               <div ref="statusBar" class="status"></div>
@@ -255,8 +255,6 @@ export default {
   setup() {
     onMounted(() => {
       statusBar.value.style.width = statusBarWidth + "%";
-      testBlock.value.style.height = window.innerHeight - 63 + "px";
-      questionBlock.value.style.height = window.innerHeight - 46 + "px";
     });
     const questionsData = [
       {
@@ -363,8 +361,6 @@ export default {
     const showInfo = ref(false);
     const picked = ref(null);
     const statusBar = ref(null);
-    const testBlock = ref(null);
-    const questionBlock = ref(null);
     const loadingText = ref(null);
     const questionsLength = questionsData.length;
     const statusBarWidth = Math.round(100 / questionsLength);
@@ -420,8 +416,6 @@ export default {
           statusBar.value.style.width =
             statusBarWidth * (questionNumber.value + 1) + "%";
         }
-      } else {
-        testEnding();
       }
     };
     const CountdownTimer = () => {
@@ -440,8 +434,6 @@ export default {
       showInfo,
       resultLoad,
       statusBar,
-      questionBlock,
-      testBlock,
       loadingText,
       questionsData,
       chooseAnswer,

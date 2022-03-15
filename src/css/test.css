@@ -24,10 +24,11 @@
     transition: all 1s;
 }
 .question-card {
+    padding-bottom: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* height: calc(100vh - 63px); */
+    height: calc(100vh - 63px);
 }
 .question-card__title {
     font-size: 20px;
@@ -41,12 +42,16 @@
     position: relative;
     background: rgba(242, 243, 243, 0.15);
 }
-@media (max-width: 900px) {
+@media (max-width: 991px) {
+    .question-card {
+        height: calc(var(--vhT, 1vh) * 100);
+    }
     .question-card__answers {
         width: 100vw;
         margin-left: -15px;
     }
 }
+
 .question-card__answer + .question-card__answer {
     margin-top: 8px;
 }
